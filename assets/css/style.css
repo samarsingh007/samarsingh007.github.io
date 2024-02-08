@@ -311,7 +311,7 @@ h6 {
 /* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
   .social-links {
-    margin-bottom: 20px; /* Adds space below the icons */
+    margin-bottom: 80px; /* Adds space below the icons */
   }
   .profile-photo-container {
     width: 250px; /* Smaller size for mobile */
