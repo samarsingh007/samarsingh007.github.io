@@ -310,9 +310,12 @@ h6 {
 
 /* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
+  .social-links {
+    margin-bottom: 20px; /* Adds space below the icons */
+  }
   .profile-photo-container {
-    width: 150px; /* Smaller size for mobile */
-    height: 150px; /* Smaller size for mobile */
+    width: 250px; /* Smaller size for mobile */
+    height: 250px; /* Smaller size for mobile */
     margin: 0 auto; /* Center the container if it's not aligned */
   }
 }
