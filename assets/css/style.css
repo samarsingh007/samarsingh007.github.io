@@ -284,13 +284,6 @@ h6 {
   }
 }
 
-.profile-photo-container {
-  width: 500px; /* Set to the width of your photo or desired width */
-  height: 500px; /* Set to the height of your photo or desired height */
-  overflow: hidden;
-  border-radius: 50%; /* Keeps the circular shape */
-  display: inline-block; /* Adjust as necessary to fit your layout */
-}
 
 @keyframes zoomInPhoto {
   0% {
@@ -301,12 +294,28 @@ h6 {
   }
 }
 
-.profile-photo {
-  width: 100%; /* Ensures the image fits the container */
-  height: auto;
-  animation: zoomInPhoto 3s ease-out forwards; /* Animation plays once */
+.profile-photo-container {
+  width: 500px; /* Adjust if necessary */
+  height: 500px; /* Adjust if necessary */
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block; /* Or flex, depending on your layout */
 }
 
+.profile-photo {
+  width: 100%;
+  height: auto;
+  animation: zoomInPhoto 3s ease-out forwards;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .profile-photo-container {
+    width: 150px; /* Smaller size for mobile */
+    height: 150px; /* Smaller size for mobile */
+    margin: 0 auto; /* Center the container if it's not aligned */
+  }
+}
 
 #hero:before {
   content: "";
